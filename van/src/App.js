@@ -8,6 +8,7 @@ import Viewbook from "./page/Viewbook";
 import Home from "./page/Home";
 import Error404 from './Error404';
 import Createbook from './page/Createbook';
+import Addbook from './page/Addbook';
 
 // function App() {
 //   return (
@@ -32,6 +33,9 @@ import Createbook from './page/Createbook';
 //   );
 // }
 
+
+
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -39,6 +43,7 @@ const App = () => {
         <Switch>
           <Route path="/view" component={Viewbook} />
           <Route path="/create" component={Createbook} />
+          <Route path="/add/" component={Addbook} />
           <Route path="/" exact={true} component={Home} />
           <Route component={Error404} />
         </Switch>

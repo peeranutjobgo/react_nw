@@ -72,8 +72,10 @@ const DataList = () => {
                                     // null
 
                                      if (data.Status === 3) 
-                                    { return ( <DisplaySeason Season={item.Season} /> )}  else
-                                    {return()}
+                                    { return
+                                        <DisplaySeason Season={item.Season} />;
+                                    }  else
+                                    {}
                                     null
                                 }
                             </div>
